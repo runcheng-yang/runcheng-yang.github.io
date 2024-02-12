@@ -5,6 +5,28 @@ body {
     font-family: Arial, sans-serif;
 }
 
+table {
+    border-collapse: collapse; /* 合并表格边框 */
+    width: 100%; /* 表格宽度占满容器 */
+}
+
+table tr {
+    border: none; /* 移除单元格边框 */
+    padding: 10px; /* 单元格内边距 */
+    color: #02182d; /* 文字颜色 */
+    text-align: left; /* 文字左对齐 */
+}
+
+table tr:nth-child(odd) {
+    background-color: #d4d5d8; /* 奇数行背景色 */
+}
+
+table tr:nth-child(even) {
+    background-color: transparent; /* 偶数行背景色透明 */
+}
+
+
+
 .container {
     width: 50%;
     margin: 20px auto 0;
@@ -24,7 +46,7 @@ body {
     margin-bottom: 20px;
 }
 
-.button {
+.button, .link-button {
     background-color: #02182d;
     color: #faf7f7;
     border: none;
@@ -32,14 +54,23 @@ body {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none; /* 去除下划线 */
+    display: inline-block; /* 将链接转换为块级元素 */
+    text-align: center; /* 文字居中 */
+    font-size: 14px; /* 设置字体大小 */
 }
 
-.button:hover {
+.button:hover, .link-button:hover {
     background-color: #164269;
 }
 
+
 .content {
     text-align: center;
+}
+
+.highlight {
+    background-color: yellow; /* 或者你喜欢的其他高亮颜色 */
 }
 
 .footer {
@@ -47,3 +78,34 @@ body {
     text-align: center;
     color: #777;
 }
+
+/* 搜索框样式 */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#search-bar {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #02182d;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 0px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #0f2d49;
+    color: #faf7f7;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #164269;
+}
+
+
