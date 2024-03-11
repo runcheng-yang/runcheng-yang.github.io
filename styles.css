@@ -39,11 +39,42 @@ table tr:nth-child(even) {
     .container {
         width: 80%;
     }
+    .button01 {
+        width: 30%; /* 按钮宽度自适应内容 */
+
+    }
 }
 
 .buttons {
     text-align: center;
     margin-bottom: 20px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* 使按钮垂直排列 */
+    align-items: center; /* 按钮在水平方向上居中 */
+    gap: 10px; /* 按钮之间的间隙 */
+    margin-top: 20px; /* 顶部外边距 */
+}
+
+.button01 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #02182d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .button01 {
+        width: 50%; 
+
+    }
 }
 
 .button, .link-button {

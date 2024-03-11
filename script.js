@@ -1,17 +1,3 @@
-function showContent(contentId) {
-    // 隐藏所有内容
-    const contents = document.querySelectorAll('.content');
-    contents.forEach(content => {
-        content.style.display = 'none';
-    });
-
-    // 显示选定的内容
-    const selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-        selectedContent.style.display = 'block';
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const searchBar = document.getElementById("search-bar");
     const searchButton = document.getElementById("search-button");
@@ -54,5 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+// function showContent(contentId) {
+//     // 隐藏所有内容
+//     const contents = document.querySelectorAll('.content');
+//     contents.forEach(content => {
+//         content.style.display = 'none';
+//     });
+
+//     // 显示选定的内容
+//     const selectedContent = document.getElementById(contentId);
+//     if (selectedContent) {
+//         selectedContent.style.display = 'block';
+//     }
+// }
 
 
